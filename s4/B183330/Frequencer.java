@@ -56,6 +56,22 @@ public class Frequencer implements FrequencerInterface{
 	catch(Exception e) {
 	    System.out.println("Exception occurred: STOP");
 	}
+
+	try {
+	    System.out.println("checking my Frequencer2");
+	    myObject = new Frequencer();
+	    myObject.setSpace("Hi Ho Hi Ho".getBytes());
+	    myObject.setTarget("".getBytes());
+	    freq = myObject.frequency();
+	    //System.out.print("\"H\" in \"Hi Ho Hi Ho\" appears "+freq+" times. ");
+	    if(0 == freq) { System.out.println("-1"); } else {System.out.println("WRONG"); }
+	}
+	catch(Exception e) {
+	    System.out.println("Exception occurred: STOP");
+	}
+
+
+
     }
 }	    
 	    
